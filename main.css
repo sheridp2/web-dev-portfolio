@@ -1,20 +1,29 @@
-.nav a {
-  color: #f7f7f7;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 12px 10px;
-  text-transform: uppercase;
-}
-&:hover{
-  font-size: 30px
+.navbar-brand {
+   font-size: 24px;
 }
 
-.nav li {
-  display: inline;
+.navbar-container {
+   padding: 20px 0 20px 0;
+   background-color: white ;
+   width: 100%;
 }
+
+.navbar.navbar-fixed-top.fixed-theme {
+   background-color: #222;
+   border-color: #080808;
+   box-shadow: 0 0 5px rgba(0,0,0,.8);
+}
+
+.navbar-brand.fixed-theme {
+   font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+   padding: 0;
+}
+
 
 .jumbotron {
-  background-image:url('http://goo.gl/04j7Nn');
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,7 +31,7 @@
 
 .jumbotron .container {
   position: relative;
-  top:60px;
+  top: 60px;
 }
 
 .jumbotron h1 {
@@ -38,7 +47,7 @@
 }
 
 .learn-more {
-  background-color: #f7f7f7;
+  background-color: #efefef;
 }
 
 .learn-more h3 {
@@ -51,12 +60,20 @@
   color: #00b0ff;
 }
 
-.projects{
-    background-color:#efefef;
-    border-bottom: 1px solid #dbdbdb;
+.skills {
+  background-color: #efefef;
+  border-bottom: 1px solid #dbdbdb;
 }
 
-.projects p{
-    font-size: 15px;
-    margin-bottom:13px;
+.projects {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.projects p {
+  font-size: 15px;
+  margin-bottom: 13px;
+}
+
+.list-group li {
+  font-size: 1.5em;
 }
