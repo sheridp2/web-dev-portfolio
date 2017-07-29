@@ -1,3 +1,8 @@
+
+.logo img{
+  width: 200px;
+}
+
 .navbar-brand {
    font-size: 24px;
 }
@@ -14,8 +19,18 @@
    box-shadow: 0 0 5px rgba(0,0,0,.8);
 }
 
+
+.navbar li{
+  margin-top: 39px;
+  font-size: 22px;
+}
+
+.navbar li :hover{
+
+}
+
 .navbar-brand.fixed-theme {
-   font-size: 18px;
+   font-size: 28px;
 }
 
 .navbar-container.fixed-theme {
@@ -30,6 +45,7 @@
 }
 
 .jumbotron .container {
+  margin-top: 70px;
   position: relative;
   top: 60px;
 }
@@ -46,34 +62,26 @@
   color: #fff;
 }
 
-.learn-more {
-  background-color: #efefef;
+.about{
+    padding: 20px;
 }
-
-.learn-more h3 {
-  font-family: 'Shift', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.learn-more a {
-  color: #00b0ff;
-}
-
 .skills {
+  padding: 20px;
   background-color: #efefef;
   border-bottom: 1px solid #dbdbdb;
 }
 
 .projects {
-  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 50px;
 }
 
 .projects p {
-  font-size: 15px;
   margin-bottom: 13px;
 }
 
 .list-group li {
   font-size: 1.5em;
+}
+.thumbnail{
+  border: 2px solid white;
 }
