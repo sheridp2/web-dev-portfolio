@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-frontend",
+  "version": "1.0.0",
+  "description": "Patrick Sheridan portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Patrick Sheridan",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  }
+}
