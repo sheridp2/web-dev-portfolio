@@ -1,0 +1,19 @@
+{
+  "name": "web-dev-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "Mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheridp2/web-dev-portfolio.git"
+  },
+  "author": "Patrick Sheridan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sheridp2/web-dev-portfolio/issues"
+  },
+  "homepage": "https://github.com/sheridp2/web-dev-portfolio#readme"
+}
