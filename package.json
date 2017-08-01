@@ -2,7 +2,7 @@
   "name": "web-dev-portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "mocha",
     "start": "node server.js"
@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/sheridp2/web-dev-portfolio/issues"
   },
-  "homepage": "https://github.com/sheridp2/web-dev-portfolio#readme"
+  "homepage": "https://github.com/sheridp2/web-dev-portfolio#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-request-proxy": "^2.0.0",
+    "nodemon": "^1.11.0"
+  }
 }
