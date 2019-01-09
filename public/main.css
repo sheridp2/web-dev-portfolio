@@ -73,6 +73,11 @@
   background-color: #efefef;
   border-bottom: 1px solid #dbdbdb;
 }
+.work-projects {
+  padding: 20px;
+  background-color: #efefef;
+  border-bottom: 1px solid #dbdbdb;
+}
 
 .projects {
   margin-bottom: 50px;
@@ -99,4 +104,8 @@
 }
 .thumbnail{
   border: 2px solid white;
+}
+
+.work-projects{
+  padding-bottom: 50px;
 }
