@@ -1,228 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Learn more about Patrick Sheridan and view webpages he has built">
+  <meta name="keywords" content="HTML,CSS,JavaScript,CMS,Web Developer,Patrick Sheridan,Front End,React,Redux,NodeJS,Bootstrap,Materialize,AWS,Drupal,Git,GitHub">
+  <meta name="author" content="Patrick Sheridan">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrick Sheridan's portfolio</title>
 
-  <head>
-    <meta name="description" content="Learn more about Patrick Sheridan and view webpages he has built">
-    <meta name="author" content="Patrick Sheridan">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
-    <link rel="icon" type="image/png"  href="assets/Patrick-Sheridan-logo.png">
 
-    <link rel="stylesheet" href="main.css">
-  </head>
+</head>
 
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="logo" href="#"><img src="assets/Patrick-Sheridan-logo.png"></a>
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+<body>
+  <header>
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo"> <img class="logo-img responsive-img" src="./assets/logo.png" alt=""> </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="nav-links" href="#">Linkedin</a></li>
+          <li><a class="nav-links" href="#">Github</a></li>
+          <li><a class="nav-links" href="./assets/Patrick_Sheridan_Resume.pdf" target="_blank">Resume</a></li>
+          <li><a class="nav-links" href="mailto:sheridp2@gmail.com">Email</a></li>
+        </ul>
 
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-left">
-
-        <li><a href="https://github.com/sheridp2" target="_blank">Linkedin</a></li>
-        <li><a href="https://www.linkedin.com/in/patrick-sheridan" target="_blank">Github</a></li>
-        <li><a href="#" target="_blank">Blog</a></li>
-        <li><a href="./assets/Patrick_Sheridan_Resume.pdf" target="_blank">Resume</a></li>
-
-        <li class="dropdown">
-      </ul>
-    </div>
-  </div>
-</nav>
-
-    <section class="banner">
-      <div class="container">
-        <div class="row">
-          <div class="row text-center">
-          <div class ="col-md-5">
-            <img class="img-resposive self-image img-circle" src="./assets/me.jpg">
-          </div>
-
-            <div class="col-md-7">
-              <h1 style="font-size:5em">Patrick Sheridan</h1>
-              <h2 style="font-size:3em">Full-Stack Web Developer</h2>
-            </div>
-          </div>
-        </div>
+        <ul id="nav-mobile" class="sidenav">
+          <li><a class="sidenav-links" href="#"><i class="material-icons">add</i>Linkedin</a></li>
+          <li><a class="sidenav-links" href="#"><i class="material-icons">code</i>Github</a></li>
+          <li><a class="sidenav-links" href="#"><i class="material-icons">open_in_new</i>Resume</a></li>
+          <li><a class="sidenav-links" href="mailto:sheridp2@gmail.com"><i class="material-icons">email</i>Email</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       </div>
-    </section>
-
-
-    <section class="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">About</h2>
-
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-sm-4 col-sm-push-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-code fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Full-Stack Web Development</h4>
-            <p class="text-muted">My mission is to make the world a better place one line of code at a time, whether that be though an innovative app that improves a persons life or a simple game that makes someone smile.</p>
-          </div>
-          <div class="col-sm-4 col-sm-pull-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Environmental Scientist</h4>
-            <p class="text-muted">After earning a BS in Environmental Science from WWU, I spent multiple seasons with the US Forest Service as a Ranger protecting and preserving the natural world.</p>
-          </div>
-          <div class="col-sm-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-keyboard-o fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Blog Writter</h4>
-            <p class="text-muted">Relatively new to the established and competetive blog writing scene, my transition from Forest Ranger to Web Developer gives me a unique persepctive on many aspects of the world.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Skills</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <ul class="list-group">
-              <li class="list-group-item text-center">JavaScript</li>
-              <li class="list-group-item text-center">HTML/CSS3</li>
-              <li class="list-group-item text-center">React</li>
-              <li class="list-group-item text-center">Express</li>
-              <li class="list-group-item text-center">Node.js</li>
-            </ul>
-          </div>
-          <div class="col-sm-4">
-            <ul class="list-group">
-              <li class="list-group-item text-center">MongoDB</li>
-              <li class="list-group-item text-center">Drupal 5</li>
-              <li class="list-group-item text-center">Content Management Systems</li>
-              <li class="list-group-item text-center">jQuery</li>
-              <li class="list-group-item text-center">Git/Github</li>
-            </ul>
-          </div>
-          <div class="col-sm-4">
-            <ul class="list-group">
-              <li class="list-group-item text-center">Heroku</li>
-              <li class="list-group-item text-center">Photoshop</li>
-              <li class="list-group-item text-center">Bootstrap</li>
-              <li class="list-group-item text-center">Raspberry Pi/Raspian</li>
-              <li class="list-group-item text-center">Webpack</li>
-
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="work-projects">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading"> Previous Work Projects</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item text-center grow"><a target=_blank href="http://a.fluke.com/IG-GL-TI-THERMALIMAGING101-LP-1-A">Thermal Imaging 101 </a></li>
-                <li class="list-group-item text-center grow"><a target=_blank href="http://a.fluke.com/IG-GL-TI-2018-TIAPPLICATIONSPECIFICLP-1-A?lcid=2eb25055-cd99-e811-80c9-00155dfd7263&lrpf=306C4BD2-C170-DE11-95B8-02BF0A064B97&plt=200000000&cra=100000000&scl=6206&redir=http://download.fluke.com/ti-thank-you/thank-you-new-camera.html">The Many Uses Of Themal Imagers </a></li>
-
-              <li class="list-group-item text-center grow"><a target=_blank href="http://a.fluke.com/IG-NA-TI-2017-PROLAUNCH-LP-1-A?lcid=bb81433a-62df-e711-80c8-00155d027404&lrpf=306C4BD2-C170-DE11-95B8-02BF0A064B97&plt=200000000&cra=100000000&scl=5654&redir=http://content.fluke.com/ti-thank-you/450-480-PRO/thankyou.html">TI Pro Series Launch Page </a></li>
-
-              <li class="list-group-item text-center grow"><a target=_blank href="https://content.fluke.com/test/innovation/test/default.html">Experimental Subscription Landing Page</a></li>
-
-              <li class="list-group-item text-center grow"><a target=_blank href="https://content.fluke.com/products/T6/EN/howto-EN.html">T6 Electrical Tester How To Guide </a></li>
-              <li class="list-group-item text-center grow"><a target=_blank href="https://content.fluke.com/promotions/promo-multi/EOFY/2018/auen.html">End of the Year Promotion </a></li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item text-center grow"><a target=_blank href="http://a.fluke.com/IG-GL-TI-2017-TIRSELAUNCH-AUEN-LP-1-A?lcid=3644c0b2-9ea4-e711-80c5-00155d027317&lrpf=TI&plt=200000000&cra=100000000&scl=5345&redir=http://www.fluke.com/fluke/auen/WhereToBuy/Promotions/promo-multi/thankyou">RSE300/600 Launch Landing Page </a></li>
-
-              <li class="list-group-item text-center grow"><a target=_blank href="http://a.fluke.com/IG-GL-TI-2018-WHICHINFRAREDCAMERAISBEST-CN-LP-1-A">User Feedback Survey (China) </a></li>
-
-              <li class="list-group-item text-center grow"><a target=_blank href="https://www.fluke.com/en-us/learn/best-practices/measurement-basics/power-quality">Power Quality Best Practices</a></li>
-
-              <li class="list-group-item text-center grow"><a target=_blank href="https://forms.fluke.com/IG-NA-TI-2018-PRODUCTCENTRIC-ENUS-LP-1-A?lcid=404d3c27-3759-e811-80c8-00155d027404&lrpf=306C4BD2-C170-DE11-95B8-02BF0A064B97&plt=200000000&cra=100000000&scl=5654&redir=https://download.fluke.com/ti-thank-you/thank-you-new-camera.html">Thermal Imaging Solution Center</a></li>
-              <li class="list-group-item text-center grow"><a target=_blank href="https://content.fluke.com/promotions/promo-multi/T1-2018-Measure-Up/caen.html">Measure Up Promotion </a></li>
-              <li class="list-group-item text-center grow"><a target=_blank href="http://a.fluke.com/IG-GL-TI-2018-DS701DS703FCLAUNCH-DEDE-LP-1-A">DS701/703 Launch Page (Germany) </a></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-    <div class="projects">
+    </nav>
+  </header>
+  <main>
+    <div id="index-banner" class="parallax-container">
+      <div class="section no-pad-bot">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <h2 class="section-heading">Personal Projects</h2>
-            </div>
-          <div class="row">
-            <div class="col-md-4 project-container">
-              <div class="thumbnail">
-                <h3>Guesswork (4 player Triva)</h3>
-                <a href="https://guesswork.herokuapp.com" target="_blank"><img class="img-responsive" src="./assets/guesswork.png"></a>
-                <p>A simple trivia app built with React, Redux, and the Open Trivia API. Up to 4 players, 3 difficulties, and minimal API calls show questions quickly and keep the game fast paced</p>
-                <a href="https://github.com/sheridp2/triviapp" target="_blank">GitHub Repo</a>
+          <br><br>
+          <h1 class="header center teal-text text-lighten-2 bold-text">Patrick Sheridan</h1>
+          <div class="row center">
+            <h4 class="header col s12 black-text">Full Stack Web Developer</h4>
+          </div>
+          <div class="row center">
+            <a href="#portfolio" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Go to Portfolio</a>
+          </div>
+          <br><br>
+          <br>
 
-              </div>
-            </div>
-            <div class="col-md-4 project-container">
-              <div class="thumbnail">
-                <h3>Emaily (User Feedback Tool)</h3>
-                <a href="https://emaily-user-feedback-app.herokuapp.com/" target="_blank"><img class="img-responsive" src="./assets/emaily.png"></a>
-                <p>App designed for companies to gather user feedback via emailed surveys. Built using React, Redux, MongoDB, Express, NodeJS, and utilizing Google Oauth2.0 (signup/signin), Stripe (credit card payments), Cookie-Session, Passport, and Sendgrid (emails).<br />
-                To add credits use card number: <br> 4242-4242-4242-4242-4242
+        </div>
+      </div>
+      <div class="parallax"><img src="./assets/img-1.jpg" alt="Photo by Ben Klea on Unsplash"></div>
+    </div>
+    <div class="container">
+      <div class="section">
 
-                </p>
-                <a href="https://github.com/sheridp2/User-Feedback-Backend"target="_blank">GitHub Repo</a><br>
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+              <h5 class="center">Full-Stack Web Development</h5>
 
-              </div>
+              <p class="light">My mission is to make the world a better place one line of code at a time, whether that be though an innovative app that improves a persons life or a simple game that makes someone smile.</p>
             </div>
-            <div class="col-md-4 project-container">
-              <div class="thumbnail">
-                <h3>Pseudo-Pet</h3>
-                <a href="https://paw-sibilites-frontend.herokuapp.com" target="_blank"><img class="img-responsive" src="./assets/pseudo-pet.png"></a>
-                <p>A tool used by parents to determine if a child is repsonsible enough to own a pet using text messages and user interaction to simulate the experience. Utilizing the Twilio API and built with Angular, Node, MongoDB, and Express.</p>
-                <a href="https://github.com/G4-Final-Project/PAWS-ibilities-frontend" target="_blank">Front-End GitHub Repo</a><br>
-                <a href="https://github.com/G4-Final-Project/PAWS-ibilities-backend" target="_blank">Back-End GitHub Repo</a>
-              </div>
-            </div>
+          </div>
 
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+              <h5 class="center">Environmental Scientist</h5>
+
+              <p class="light">After earning a BS in Environmental Science from WWU, I spent multiple seasons with the US Forest Service as a Ranger protecting and preserving the natural world</p>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+              <h5 class="center">Blog Writter</h5>
+
+              <p class="light">Relatively new to the established and competetive blog writing scene, my transition from Forest Ranger to Web Developer gives me a unique persepctive on many aspects of the world.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="parallax-container valign-wrapper work-portfolio-title" id="portfolio">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+            <h1 class="header col s12 light blue-text text-darken-2 bold-text">Portfolio</h1>
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img src="./assets/img-19.jpeg" alt="Photo by Johan Bos from Pexels"></div>
+    </div>
+
+
+    <div class="container">
+
+      <div class="main-carousel" data-flickity='{"wrapAround": true, "autoPlay": 3000, "pauseAutoPlayOnHover": false, "pageDots": false }'>
+        <div class="carousel-cell"> <a target=_blank href="http://a.fluke.com/IG-GL-TI-THERMALIMAGING101-LP-1-A"><img class="responsive-img" src="./assets/img-2.png"></a> </div>
+        <div class="carousel-cell"> <a target=_blank href="https://www.fluke.com/en-us"><img class="responsive-img" src="./assets/img-5.png"></a> </div>
+        <div class="carousel-cell"> <a target=_blank href="http://a.fluke.com/IG-GL-TI-2018-TIAPPLICATIONSPECIFICLP-1-A?lcid=2eb25055-cd99-e811-80c9-00155dfd7263&lrpf=306C4BD2-C170-DE11-95B8-02BF0A064B97&plt=200000000&cra=100000000&scl=6206&redir=http://download.fluke.com/ti-thank-you/thank-you-new-camera.html"><img
+              class="responsive-img" src="./assets/img-3.png"></a> </div>
+        <div class="carousel-cell"> <a target=_blank href="http://a.fluke.com/IG-NA-TI-2017-PROLAUNCH-LP-1-A?lcid=bb81433a-62df-e711-80c8-00155d027404&lrpf=306C4BD2-C170-DE11-95B8-02BF0A064B97&plt=200000000&cra=100000000&scl=5654&redir=http://content.fluke.com/ti-thank-you/450-480-PRO/thankyou.html"><img
+              class="responsive-img" src="./assets/img-4.png"> </a> </div>
+        <div class="carousel-cell"> <a target=_blank href="https://www.fluke.com/en-us/products/thermal-imaging/infrared-cameras/professional-series"><img class="responsive-img" src="./assets/img-6.png"></a> </div>
+        <div class="carousel-cell"> <a target=_blank href="http://a.fluke.com/IG-GL-TI-2017-TIRSELAUNCH-AUEN-LP-1-A?lcid=3644c0b2-9ea4-e711-80c5-00155d027317&lrpf=TI&plt=200000000&cra=100000000&scl=5345&redir=http://www.fluke.com/fluke/auen/WhereToBuy/Promotions/promo-multi/thankyou"><img
+              class="responsive-img" src="./assets/img-10.png"></a> </div>
+        <div class="carousel-cell"> <a target=_blank href="https://www.fluke.com/en-us/learn/best-practices/measurement-basics/power-quality"><img class="responsive-img" src="./assets/img-12.png"></a> </div>
+        <div class="carousel-cell"> <a target=_blank href="https://forms.fluke.com/IG-NA-TI-2018-PRODUCTCENTRIC-ENUS-LP-1-A?lcid=404d3c27-3759-e811-80c8-00155d027404&lrpf=306C4BD2-C170-DE11-95B8-02BF0A064B97&plt=200000000&cra=100000000&scl=5654&redir=https://download.fluke.com/ti-thank-you/thank-you-new-camera.html"><img
+              class="responsive-img" src="./assets/img-13.png"> </a> </div>
+
+      </div>
+
+    </div>
+
+    <div class="parallax-container valign-wrapper skill">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+            <h1 class="header col s12 light white-text bold-text">Skills and Personal Projects</h1>
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img src="./assets/img-18.jpeg" alt="Photo by Johan Bos from Pexels"></div>
+    </div>
+    <div class="container" style="padding-top: 50px;">
+      <div class="row">
+        <div class="col m12 l4">
+          <div class="card">
+            <div class="card-image">
+              <a target="_blank" href="https://emaily-user-feedback-app.herokuapp.com/">
+                <img src="./assets/emaily.png">
+              </a>
+              <span class="card-title black-text" style="font-weight:bold">Emaily (User Feedback Tool)</span>
+            </div>
+            <div class="card-content">
+              <p>App designed for companies to gather user feedback via emailed surveys. Built using React, Redux, MongoDB, Express, NodeJS, and utilizing Google Oauth2.0 (signup/signin), Stripe (credit card payments), Cookie-Session, Passport, and
+                Sendgrid (emails).
+                To add credits use card number:
+                4242-4242-4242-4242-4242</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/sheridp2/User-Feedback-Backend">Github Repo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col m12 l4">
+          <div class="card">
+            <div class="card-image">
+              <a href="https://guesswork.herokuapp.com/">
+                <img target="_blank" src="./assets/guesswork.png">
+              </a>
+              <span class="card-title black-text" style="font-weight:bold">Guesswork (4 player Triva)</span>
+            </div>
+            <div class="card-content">
+              <p>A simple trivia app built with React, Redux, and the Open Trivia API. Up to 4 players, 3 difficulties, and minimal API calls show questions quickly and keep the game fast paced</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/sheridp2/triviapp">Github Repo</a>
+            </div>
+          </div>
+        </div>
+        <div class="col m12 l4">
+          <div class="card">
+            <div class="card-image">
+              <a target="_blank" href="https://paw-sibilites-frontend.herokuapp.com/#!/join#signup">
+                <img src="./assets/pseudo-pet.png">
+              </a>
+              <span class="card-title black-text" style="font-weight:bold">Pseudo-Pet</span>
+            </div>
+            <div class="card-content">
+              <p>An app used by parents to determine if a child is repsonsible enough to own a pet using text messages and user interaction to simulate the experience. Utilizing the Twilio API and built with Angular, Node, MongoDB, and Express.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/G4-Final-Project/PAWS-ibilities-frontend">Frontend Repo</a>
+              <a href="https://github.com/G4-Final-Project/PAWS-ibilities-backend">Backend Repo</a>
             </div>
           </div>
         </div>
       </div>
 
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col m12 l4">
+          <ul class="collection">
+            <li class="collection-item grow">JavaScript</li>
+            <li class="collection-item grow">HTML5/CSS3</li>
+            <li class="collection-item grow">React/Redux</li>
+            <li class="collection-item grow">Express</li>
+            <li class="collection-item grow">Node.js</li>
+            <li class="collection-item grow">MongoDB</li>
+          </ul>
+
+        </div>
+        <div class="col m12 l4">
+          <ul class="collection">
+            <li class="collection-item grow">Drupal 5</li>
+            <li class="collection-item grow">CMS(Clickability,PCAT)</li>
+            <li class="collection-item grow">jQuery</li>
+            <li class="collection-item grow">Git/Github</li>
+            <li class="collection-item grow">Eloqua</li>
+            <li class="collection-item grow">AWS</li>
+          </ul>
+
+        </div>
+        <div class="col m12 l4">
+          <ul class="collection">
+            <li class="collection-item grow">RESTful API's</li>
+            <li class="collection-item grow">Heroku</li>
+            <li class="collection-item grow">Photoshop</li>
+            <li class="collection-item grow">Bootstrap/Materialize</li>
+            <li class="collection-item grow">Jira</li>
+            <li class="collection-item grow">Adobe Suite</li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer ">
+    <div class="footer-copyright">
+      <div class="container">
+        <a class="grey-text text-lighten-4 right" href="#logo-container">Back to top</a>
+      </div>
+    </div>
+
+    </div>
+
+  </footer>
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </body>
+
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+</body>
+
 </html>
